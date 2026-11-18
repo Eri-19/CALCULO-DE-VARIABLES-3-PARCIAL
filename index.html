@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Actividad 2.2.2.1 — Actividad 2.2.2.1</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: Arial, Helvetica, sans-serif; line-height: 1.6; color: #4a4a5e; background: #fdf6f0; margin: 0; padding: 0; }
+  header { background: linear-gradient(135deg, #ffd6e7 0%, #e6d9ff 50%, #cdeffd 100%); color: #4a3f6b; padding: 2rem 1rem; text-align: center; }
+  header h1 { margin: 0; font-size: 2rem; color: #4a3f6b; }
+  header p { margin: 0.5rem 0 0; opacity: 0.9; }
+  nav { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+  nav a { color: #6b5ca5; background: rgba(255,255,255,0.85); border: 1px solid #e9d5ff; padding: 0.4rem 0.9rem; border-radius: 20px; text-decoration: none; font-size: 0.9rem; }
+  main { max-width: 900px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+  .intro { background: #fffdfb; border: 1px solid #ffe4d6; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(180,160,200,0.12); margin-bottom: 1.5rem; }
+  section { background: #fffdfb; border: 1px solid #f3e2ec; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(180,160,200,0.12); margin-bottom: 1.5rem; }
+  #enunciado-1 { border-top: 6px solid #f9a8d4; }
+  #enunciado-2 { border-top: 6px solid #a5d8ff; }
+  #enunciado-3 { border-top: 6px solid #a7f3d0; }
+  #enunciado-4 { border-top: 6px solid #fde68a; }
+  h2 { color: #8e7cc3; margin-top: 0; }
+  #enunciado-1 h2 { color: #d16a9e; }
+  #enunciado-2 h2 { color: #5b8fd6; }
+  #enunciado-3 h2 { color: #3da58a; }
+  #enunciado-4 h2 { color: #c08a2d; }
+  .ecuacion { padding: 1rem; text-align: center; font-size: 1.35rem; margin: 1rem 0; overflow-x: auto; color: #6b5ca5; }
+  .frac { display: inline-block; vertical-align: middle; text-align: center; margin: 0 2px; font-style: italic; }
+  .frac > span { display: block; padding: 0 6px; line-height: 1.25; }
+  .frac > span:first-child { border-bottom: 1.5px solid #8e7cc3; }
+  .ecuacion i { font-family: "Times New Roman", Times, serif; }
+  figure { margin: 1.5rem 0 0; text-align: center; }
+  figure img { max-width: 100%; max-height: 520px; width: auto; height: auto; border-radius: 8px; border: 1px solid #e9d5ff; display: block; margin: 0 auto; background: #fff; }
+  figcaption { font-size: 0.9rem; color: #8a8a9e; margin-top: 0.5rem; text-align: center; }
+  .observacion { background: #fff7d6; border-left: 4px solid #fde68a; padding: 0.9rem 1rem; border-radius: 0 8px 8px 0; margin-top: 1rem; }
+  .observacion strong { display: block; margin-bottom: 0.25rem; color: #8a6d3b; }
+  footer { text-align: center; color: #9a8fb0; font-size: 0.9rem; padding-bottom: 2rem; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
+  .card { background: #fffdfb; border: 1px solid #f3e2ec; border-radius: 12px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(180,160,200,0.12); text-align: center; }
+  .card img { max-width: 100%; max-height: 180px; width: auto; height: auto; border-radius: 8px; border: 1px solid #e9d5ff; display: block; margin: 0.8rem auto; background: #fff; }
+  .card h2 { font-size: 1.2rem; }
+  .boton { display: inline-block; margin-top: 0.8rem; padding: 0.6rem 1.2rem; border-radius: 20px; background: #e6d9ff; color: #4a3f6b; text-decoration: none; font-weight: bold; }
+  .pager { display: flex; justify-content: space-between; gap: 0.5rem; flex-wrap: wrap; margin-top: 1.5rem; }
+  .pager a { color: #6b5ca5; background: #fff; border: 1px solid #e9d5ff; padding: 0.6rem 1rem; border-radius: 20px; text-decoration: none; }
+  @media (max-width: 600px) {
+    header h1 { font-size: 1.5rem; }
+    .ecuacion { font-size: 1.15rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Actividad 2.2.2.1</h1>
+  <p>Grafique el campo de direcciones ó líneas de flujo de la familia de curvas derivadas de solución de las Ecuaciones Diferenciales mostradas.</p>
+  
+</header>
+<main>
+  <div class="intro">
+    <p>Elige un enunciado. Al dar click en uno, se abre solo la página de ese ejercicio, con su enunciado y su gráfica.</p>
+  </div>
+  <div class="cards">
+  <div class="card" id="enunciado-1">
+    <h2>Enunciado 1: Difusión de calor</h2>
+    <p>Ley de Enfriamiento de Newton</p>
+    <img src="img/grafica-1.jpeg" alt="Campo de direcciones y curvas solución de la difusión de calor, con equilibrio en 20">
+    <br><a class="boton" href="enunciado-1.html">Ver ejercicio 1</a>
+  </div>
+  <div class="card" id="enunciado-2">
+    <h2>Enunciado 2: Flujo en tubería horizontal</h2>
+    <p>Velocidad del fluido en una tubería</p>
+    <img src="img/grafica-2.jpeg" alt="Campo de direcciones y líneas de flujo de la velocidad en una tubería horizontal, con equilibrio en 0">
+    <br><a class="boton" href="enunciado-2.html">Ver ejercicio 2</a>
+  </div>
+  <div class="card" id="enunciado-3">
+    <h2>Enunciado 3: Movimiento bajo fricción lineal</h2>
+    <p>Movimiento de una partícula con fricción</p>
+    <img src="img/grafica-3.jpeg" alt="Campo de direcciones del movimiento con fricción lineal, con equilibrio en 10">
+    <br><a class="boton" href="enunciado-3.html">Ver ejercicio 3</a>
+  </div>
+  <div class="card" id="enunciado-4">
+    <h2>Enunciado 4: Crecimiento poblacional logístico</h2>
+    <p>Modelo de crecimiento logístico</p>
+    <img src="img/grafica-4.jpeg" alt="Campo de trayectorias del crecimiento poblacional logístico, con capacidad máxima en 5">
+    <br><a class="boton" href="enunciado-4.html">Ver ejercicio 4</a>
+  </div>
+  </div>
+</main>
+
+<footer>
+  Actividad 2.2.2.1 — Ecuaciones Diferenciales
+</footer>
+
+<script>
+  document.querySelectorAll('figure img').forEach(function(img) {
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', function() {
+      window.open(img.src, '_blank');
+    });
+  });
+</script>
+
+</body>
+</html>
